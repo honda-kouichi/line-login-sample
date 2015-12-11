@@ -27,7 +27,7 @@
 			<string>net.actindi.line-login-sample</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>line3rdp.net.actindi.line-login-sample://</string>
+				<string>line3rdp.net.actindi.line-login-sample</string>
 			</array>
 		</dict>
 	</array>
