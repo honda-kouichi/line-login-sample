@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="line_login_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,112 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bx4-Zz-QXc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ho-BU-nzD">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="アプリ内でログイン"/>
+                                        <connections>
+                                            <action selector="loginInAppButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RU3-Gq-TXK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-fH-wtC">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="LINEでログイン"/>
+                                        <connections>
+                                            <action selector="loginWithLINEButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7rG-pM-WAr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwo-vd-sWz">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="APIで情報取得"/>
+                                        <connections>
+                                            <action selector="tryApiButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ivk-Yi-uty"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7Ho-BU-nzD" firstAttribute="top" secondItem="xBL-fH-wtC" secondAttribute="bottom" constant="10" id="B7a-tf-sOY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uwo-vd-sWz" secondAttribute="bottom" constant="10" id="E8H-sP-pzS"/>
+                                    <constraint firstItem="Uwo-vd-sWz" firstAttribute="centerX" secondItem="bx4-Zz-QXc" secondAttribute="centerX" id="Lrb-jC-lhq"/>
+                                    <constraint firstItem="xBL-fH-wtC" firstAttribute="top" secondItem="bx4-Zz-QXc" secondAttribute="top" constant="10" id="Pt6-0T-GLZ"/>
+                                    <constraint firstItem="Uwo-vd-sWz" firstAttribute="top" secondItem="7Ho-BU-nzD" secondAttribute="bottom" constant="10" id="gi1-Yh-Vl1"/>
+                                    <constraint firstItem="xBL-fH-wtC" firstAttribute="centerX" secondItem="bx4-Zz-QXc" secondAttribute="centerX" id="qH5-yV-sqI"/>
+                                    <constraint firstItem="7Ho-BU-nzD" firstAttribute="centerX" secondItem="bx4-Zz-QXc" secondAttribute="centerX" id="xzc-cp-4wO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="7Ho-BU-nzD"/>
+                                        <exclude reference="xBL-fH-wtC"/>
+                                        <exclude reference="Uwo-vd-sWz"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="Pt6-0T-GLZ"/>
+                                        <exclude reference="qH5-yV-sqI"/>
+                                        <exclude reference="B7a-tf-sOY"/>
+                                        <exclude reference="xzc-cp-4wO"/>
+                                        <exclude reference="E8H-sP-pzS"/>
+                                        <exclude reference="Lrb-jC-lhq"/>
+                                        <exclude reference="gi1-Yh-Vl1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="7Ho-BU-nzD"/>
+                                        <include reference="xBL-fH-wtC"/>
+                                        <include reference="Uwo-vd-sWz"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="Pt6-0T-GLZ"/>
+                                        <include reference="qH5-yV-sqI"/>
+                                        <include reference="B7a-tf-sOY"/>
+                                        <include reference="xzc-cp-4wO"/>
+                                        <include reference="E8H-sP-pzS"/>
+                                        <include reference="Lrb-jC-lhq"/>
+                                        <include reference="gi1-Yh-Vl1"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bx4-Zz-QXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OWe-bG-fOQ"/>
+                            <constraint firstItem="bx4-Zz-QXc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ynm-0d-bJh"/>
+                            <constraint firstItem="bx4-Zz-QXc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uN4-dh-Q2z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bx4-Zz-QXc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="OWe-bG-fOQ"/>
+                                <exclude reference="Ynm-0d-bJh"/>
+                                <exclude reference="uN4-dh-Q2z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bx4-Zz-QXc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="OWe-bG-fOQ"/>
+                                <include reference="Ynm-0d-bJh"/>
+                                <include reference="uN4-dh-Q2z"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="694.5" y="422.25"/>
         </scene>
     </scenes>
 </document>

@@ -14,9 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        LineAdapter.handleLaunchOptions(launchOptions);
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool
+    {
+        return LineAdapter.handleOpenURL(url)
+    }
+    
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool
+    {
+        return LineAdapter.handleOpenURL(url);
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -69,6 +69,7 @@
 		2811F2CC1C1A736B0047B908 /* LineAdapterLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineAdapterLogin.framework; sourceTree = "<group>"; };
 		2811F2CD1C1A736B0047B908 /* LineAdapterUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineAdapterUI.bundle; sourceTree = "<group>"; };
 		2811F2CE1C1A736B0047B908 /* LineAdapterUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineAdapterUI.framework; sourceTree = "<group>"; };
+		2811F2D31C1A74E20047B908 /* LineSDKStarterSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineSDKStarterSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 				2811F2721C1A593E0047B908 /* LaunchScreen.storyboard */,
 				2811F2751C1A593E0047B908 /* Info.plist */,
 				2811F2BF1C1A6F6D0047B908 /* LineAdapter.plist */,
+				2811F2D31C1A74E20047B908 /* LineSDKStarterSwift-Bridging-Header.h */,
 			);
 			path = "line-login-sample";
 			sourceTree = "<group>";
@@ -243,6 +245,7 @@
 				TargetAttributes = {
 					2811F2651C1A593E0047B908 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 385WLX559B;
 					};
 					2811F2791C1A593E0047B908 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -381,7 +384,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Takamichi Shimomoto (53MAN3G3Z6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Takamichi Shimomoto (53MAN3G3Z6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -404,6 +408,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "9146cb15-c5aa-4c83-a483-1319496b8712";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -426,7 +431,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Actindi Inc. (385WLX559B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Actindi Inc. (385WLX559B)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -442,6 +448,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "42ca6bdb-6b05-4b5a-b3da-ff3fa948af64";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -451,6 +458,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Takamichi Shimomoto (53MAN3G3Z6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Takamichi Shimomoto (53MAN3G3Z6)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LineAdapter-3.1.15",
@@ -459,6 +468,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.line-login-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9146cb15-c5aa-4c83-a483-1319496b8712";
+				SWIFT_OBJC_BRIDGING_HEADER = "line-login-sample/LineSDKStarterSwift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -466,6 +477,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Actindi Inc. (385WLX559B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Actindi Inc. (385WLX559B)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LineAdapter-3.1.15",
@@ -474,6 +487,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.line-login-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "42ca6bdb-6b05-4b5a-b3da-ff3fa948af64";
+				SWIFT_OBJC_BRIDGING_HEADER = "line-login-sample/LineSDKStarterSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
