@@ -14,6 +14,17 @@
 		2811F2741C1A593E0047B908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2811F2721C1A593E0047B908 /* LaunchScreen.storyboard */; };
 		2811F27F1C1A593E0047B908 /* line_login_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F27E1C1A593E0047B908 /* line_login_sampleTests.swift */; };
 		2811F28A1C1A593E0047B908 /* line_login_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F2891C1A593E0047B908 /* line_login_sampleUITests.swift */; };
+		2811F2B41C1A6CBD0047B908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2B31C1A6CBD0047B908 /* Foundation.framework */; };
+		2811F2B61C1A6CC40047B908 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2B51C1A6CC40047B908 /* UIKit.framework */; };
+		2811F2B81C1A6CCC0047B908 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2B71C1A6CCC0047B908 /* Security.framework */; };
+		2811F2BA1C1A6CDB0047B908 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2B91C1A6CDB0047B908 /* CoreTelephony.framework */; };
+		2811F2BC1C1A6CE40047B908 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2BB1C1A6CE40047B908 /* CoreGraphics.framework */; };
+		2811F2BE1C1A6CEB0047B908 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2BD1C1A6CEB0047B908 /* CoreText.framework */; };
+		2811F2C01C1A6F6D0047B908 /* LineAdapter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2811F2BF1C1A6F6D0047B908 /* LineAdapter.plist */; };
+		2811F2CF1C1A736B0047B908 /* LineAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2CB1C1A736B0047B908 /* LineAdapter.framework */; };
+		2811F2D01C1A736B0047B908 /* LineAdapterLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2CC1C1A736B0047B908 /* LineAdapterLogin.framework */; };
+		2811F2D11C1A736B0047B908 /* LineAdapterUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2811F2CD1C1A736B0047B908 /* LineAdapterUI.bundle */; };
+		2811F2D21C1A736B0047B908 /* LineAdapterUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F2CE1C1A736B0047B908 /* LineAdapterUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,17 @@
 		2811F2851C1A593E0047B908 /* line-login-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "line-login-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2811F2891C1A593E0047B908 /* line_login_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = line_login_sampleUITests.swift; sourceTree = "<group>"; };
 		2811F28B1C1A593E0047B908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2811F2B31C1A6CBD0047B908 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2811F2B51C1A6CC40047B908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2811F2B71C1A6CCC0047B908 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2811F2B91C1A6CDB0047B908 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2811F2BB1C1A6CE40047B908 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2811F2BD1C1A6CEB0047B908 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		2811F2BF1C1A6F6D0047B908 /* LineAdapter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LineAdapter.plist; sourceTree = "<group>"; };
+		2811F2CB1C1A736B0047B908 /* LineAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineAdapter.framework; sourceTree = "<group>"; };
+		2811F2CC1C1A736B0047B908 /* LineAdapterLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineAdapterLogin.framework; sourceTree = "<group>"; };
+		2811F2CD1C1A736B0047B908 /* LineAdapterUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineAdapterUI.bundle; sourceTree = "<group>"; };
+		2811F2CE1C1A736B0047B908 /* LineAdapterUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineAdapterUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2811F2D01C1A736B0047B908 /* LineAdapterLogin.framework in Frameworks */,
+				2811F2CF1C1A736B0047B908 /* LineAdapter.framework in Frameworks */,
+				2811F2BE1C1A6CEB0047B908 /* CoreText.framework in Frameworks */,
+				2811F2BC1C1A6CE40047B908 /* CoreGraphics.framework in Frameworks */,
+				2811F2BA1C1A6CDB0047B908 /* CoreTelephony.framework in Frameworks */,
+				2811F2B81C1A6CCC0047B908 /* Security.framework in Frameworks */,
+				2811F2B61C1A6CC40047B908 /* UIKit.framework in Frameworks */,
+				2811F2D21C1A736B0047B908 /* LineAdapterUI.framework in Frameworks */,
+				2811F2B41C1A6CBD0047B908 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +108,13 @@
 		2811F25D1C1A593E0047B908 = {
 			isa = PBXGroup;
 			children = (
+				2811F2CA1C1A736B0047B908 /* LineAdapter-3.1.15 */,
+				2811F2BD1C1A6CEB0047B908 /* CoreText.framework */,
+				2811F2BB1C1A6CE40047B908 /* CoreGraphics.framework */,
+				2811F2B91C1A6CDB0047B908 /* CoreTelephony.framework */,
+				2811F2B71C1A6CCC0047B908 /* Security.framework */,
+				2811F2B51C1A6CC40047B908 /* UIKit.framework */,
+				2811F2B31C1A6CBD0047B908 /* Foundation.framework */,
 				2811F2681C1A593E0047B908 /* line-login-sample */,
 				2811F27D1C1A593E0047B908 /* line-login-sampleTests */,
 				2811F2881C1A593E0047B908 /* line-login-sampleUITests */,
@@ -103,6 +141,7 @@
 				2811F2701C1A593E0047B908 /* Assets.xcassets */,
 				2811F2721C1A593E0047B908 /* LaunchScreen.storyboard */,
 				2811F2751C1A593E0047B908 /* Info.plist */,
+				2811F2BF1C1A6F6D0047B908 /* LineAdapter.plist */,
 			);
 			path = "line-login-sample";
 			sourceTree = "<group>";
@@ -123,6 +162,17 @@
 				2811F28B1C1A593E0047B908 /* Info.plist */,
 			);
 			path = "line-login-sampleUITests";
+			sourceTree = "<group>";
+		};
+		2811F2CA1C1A736B0047B908 /* LineAdapter-3.1.15 */ = {
+			isa = PBXGroup;
+			children = (
+				2811F2CB1C1A736B0047B908 /* LineAdapter.framework */,
+				2811F2CC1C1A736B0047B908 /* LineAdapterLogin.framework */,
+				2811F2CD1C1A736B0047B908 /* LineAdapterUI.bundle */,
+				2811F2CE1C1A736B0047B908 /* LineAdapterUI.framework */,
+			);
+			path = "LineAdapter-3.1.15";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +279,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2811F2D11C1A736B0047B908 /* LineAdapterUI.bundle in Resources */,
 				2811F2741C1A593E0047B908 /* LaunchScreen.storyboard in Resources */,
 				2811F2711C1A593E0047B908 /* Assets.xcassets in Resources */,
+				2811F2C01C1A6F6D0047B908 /* LineAdapter.plist in Resources */,
 				2811F26F1C1A593E0047B908 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,9 +400,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -386,8 +439,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -397,6 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LineAdapter-3.1.15",
+				);
 				INFOPLIST_FILE = "line-login-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.line-login-sample";
@@ -408,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LineAdapter-3.1.15",
+				);
 				INFOPLIST_FILE = "line-login-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.actindi.line-login-sample";
@@ -482,6 +544,7 @@
 				2811F2901C1A593E0047B908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2811F2911C1A593E0047B908 /* Build configuration list for PBXNativeTarget "line-login-sampleTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +553,7 @@
 				2811F2931C1A593E0047B908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2811F2941C1A593E0047B908 /* Build configuration list for PBXNativeTarget "line-login-sampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +562,7 @@
 				2811F2961C1A593E0047B908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

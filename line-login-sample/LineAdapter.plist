@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ChannelId</key>
+	<string>1450949316</string>
+
+<key>LSApplicationQueriesSchemes</key>
+<array>
+ <string>lineauth</string>
+ <string>line3rdp.$(APP_IDENTIFIER)</string>
+</array>
+
+<key>NSAppTransportSecurity</key>
+<dict>
+ <key>NSExceptionDomains</key>
+ <dict>
+  <key>obs.line-apps.com</key>
+  <dict>
+   <key>NSIncludesSubdomains</key>
+   <true/>
+   <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+   <false/>
+  </dict>
+  <key>dl.profile.line.naver.jp</key>
+  <dict>
+   <key>NSIncludesSubdomains</key>
+   <true/>
+   <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+   <false/>
+  </dict>
+  <key>lcs.naver.jp</key>
+  <dict>
+   <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+   <false/>
+  </dict>
+  <key>scdn.line-apps.com</key>
+  <dict>
+   <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+   <false/>
+  </dict>
+  <key>access.line.me</key>
+  <dict>
+   <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+   <false/>
+  </dict>
+  <key>api.line.me</key>
+  <dict>
+   <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+   <false/>
+  </dict>
+ </dict>
+</dict>
+
+</dict>
+</plist>
