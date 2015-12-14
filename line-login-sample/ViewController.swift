@@ -108,5 +108,12 @@ class ViewController: UIViewController
             self.alert("Your name is \(displayName)", message: "")
         }
     }
+    
+    @IBAction func logoutButtonTouchUpInside(sender: UIButton)
+    {
+        adapter.unauthorize()
+        alert("Logged out", message: "")
+    }
+    
 }
 

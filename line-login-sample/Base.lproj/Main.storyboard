@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,7 +22,6 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ho-BU-nzD">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <animations/>
                                         <state key="normal" title="アプリ内でログイン"/>
                                         <connections>
                                             <action selector="loginInAppButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RU3-Gq-TXK"/>
@@ -30,7 +29,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-fH-wtC">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <animations/>
                                         <state key="normal" title="LINEでログイン"/>
                                         <connections>
                                             <action selector="loginWithLINEButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7rG-pM-WAr"/>
@@ -38,22 +36,30 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwo-vd-sWz">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <animations/>
                                         <state key="normal" title="APIで情報取得"/>
                                         <connections>
                                             <action selector="tryApiButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ivk-Yi-uty"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSa-IH-Dk9">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="ログアウト"/>
+                                        <connections>
+                                            <action selector="logoutButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xza-UN-zq0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="hSa-IH-Dk9" firstAttribute="top" secondItem="Uwo-vd-sWz" secondAttribute="bottom" constant="10" id="3N4-eR-HYy"/>
+                                    <constraint firstItem="hSa-IH-Dk9" firstAttribute="centerX" secondItem="bx4-Zz-QXc" secondAttribute="centerX" id="5Hx-SI-ErF"/>
                                     <constraint firstItem="7Ho-BU-nzD" firstAttribute="top" secondItem="xBL-fH-wtC" secondAttribute="bottom" constant="10" id="B7a-tf-sOY"/>
                                     <constraint firstAttribute="bottom" secondItem="Uwo-vd-sWz" secondAttribute="bottom" constant="10" id="E8H-sP-pzS"/>
                                     <constraint firstItem="Uwo-vd-sWz" firstAttribute="centerX" secondItem="bx4-Zz-QXc" secondAttribute="centerX" id="Lrb-jC-lhq"/>
                                     <constraint firstItem="xBL-fH-wtC" firstAttribute="top" secondItem="bx4-Zz-QXc" secondAttribute="top" constant="10" id="Pt6-0T-GLZ"/>
                                     <constraint firstItem="Uwo-vd-sWz" firstAttribute="top" secondItem="7Ho-BU-nzD" secondAttribute="bottom" constant="10" id="gi1-Yh-Vl1"/>
                                     <constraint firstItem="xBL-fH-wtC" firstAttribute="centerX" secondItem="bx4-Zz-QXc" secondAttribute="centerX" id="qH5-yV-sqI"/>
+                                    <constraint firstAttribute="bottom" secondItem="hSa-IH-Dk9" secondAttribute="bottom" constant="10" id="uvJ-mr-w86"/>
                                     <constraint firstItem="7Ho-BU-nzD" firstAttribute="centerX" secondItem="bx4-Zz-QXc" secondAttribute="centerX" id="xzc-cp-4wO"/>
                                 </constraints>
                                 <variation key="default">
@@ -61,15 +67,19 @@
                                         <exclude reference="7Ho-BU-nzD"/>
                                         <exclude reference="xBL-fH-wtC"/>
                                         <exclude reference="Uwo-vd-sWz"/>
+                                        <exclude reference="hSa-IH-Dk9"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="Pt6-0T-GLZ"/>
-                                        <exclude reference="qH5-yV-sqI"/>
                                         <exclude reference="B7a-tf-sOY"/>
                                         <exclude reference="xzc-cp-4wO"/>
                                         <exclude reference="E8H-sP-pzS"/>
                                         <exclude reference="Lrb-jC-lhq"/>
                                         <exclude reference="gi1-Yh-Vl1"/>
+                                        <exclude reference="3N4-eR-HYy"/>
+                                        <exclude reference="5Hx-SI-ErF"/>
+                                        <exclude reference="uvJ-mr-w86"/>
+                                        <exclude reference="Pt6-0T-GLZ"/>
+                                        <exclude reference="qH5-yV-sqI"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -77,20 +87,23 @@
                                         <include reference="7Ho-BU-nzD"/>
                                         <include reference="xBL-fH-wtC"/>
                                         <include reference="Uwo-vd-sWz"/>
+                                        <include reference="hSa-IH-Dk9"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="Pt6-0T-GLZ"/>
-                                        <include reference="qH5-yV-sqI"/>
                                         <include reference="B7a-tf-sOY"/>
                                         <include reference="xzc-cp-4wO"/>
-                                        <include reference="E8H-sP-pzS"/>
+                                        <exclude reference="E8H-sP-pzS"/>
                                         <include reference="Lrb-jC-lhq"/>
                                         <include reference="gi1-Yh-Vl1"/>
+                                        <include reference="3N4-eR-HYy"/>
+                                        <include reference="5Hx-SI-ErF"/>
+                                        <include reference="uvJ-mr-w86"/>
+                                        <include reference="Pt6-0T-GLZ"/>
+                                        <include reference="qH5-yV-sqI"/>
                                     </mask>
                                 </variation>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bx4-Zz-QXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OWe-bG-fOQ"/>
